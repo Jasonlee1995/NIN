@@ -17,10 +17,11 @@ Library
 - model.py : NIN model
 - train.py : train NIN
 - utils.py : count correct prediction
+- best.pt : best NIN weight files without dropout
 - NIN - Cifar 10.ipynb : install library, download dataset, preprocessing, train and result
 - Visualize - Feature Map.ipynb : visualize the feature map of full activations, top 10% activations
 - Details
-  * NIN with dropout is hard to train and get the score same as paper, so used NIN without dropout instead
+  * NIN with dropout is hard to train and get the score same as paper
   * Follow the official code train details : batch size 128, momentum 0.9, weight decay 0.00001
   * No learning rate scheduler for convenience
   * No augmentation using global contrast normalization, ZCA whitening
