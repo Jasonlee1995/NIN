@@ -29,5 +29,18 @@ Library
   * Use CIFAR 10 statistics for image pre-processing
 
 
-## 2. Reference
+## 2. Result Comparison on CIFAR-10
+|Source|Score|Detail|
+|:-:|:-:|:-|
+|Paper|89.59|NIN + Dropout|
+|Paper|91.19|NIN + Dropout + Data Augmentation|
+|Current Repo|87.7|NIN + Data Augmentation|
+|Current Repo|65.49|NIN + Dropout + Data Augmentation|
+|Current Repo|72.82|NIN + Dropout + Data Augmentation + Small lr|
+
+- There are some issues about hard to train network with dropout
+- Recommend to first train model first without dropout and then train model with dropout using small lr
+
+
+## 3. Reference
 - Network In Network [[paper]](https://arxiv.org/pdf/1312.4400.pdf) [[official code]](https://github.com/mavenlin/cuda-convnet)
